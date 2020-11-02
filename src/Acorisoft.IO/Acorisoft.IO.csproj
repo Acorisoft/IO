@@ -1,7 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>	
+	<PackageIcon>icon_64x64.png</PackageIcon>
+		<PackageId>Acorisoft.IO</PackageId>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageVersion>1.0.0.0</PackageVersion>
+		<Description>An custom io library for acorisoft</Description>
+		<PackageProjectUrl>https://github.com/Acorisoft/IO</PackageProjectUrl>
+		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
   </PropertyGroup>
-
+	<ItemGroup>
+		<None Include="icon_64x64.png" Pack="true" PackagePath="" />
+	</ItemGroup>
 </Project>

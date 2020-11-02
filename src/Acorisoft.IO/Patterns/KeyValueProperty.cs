@@ -16,6 +16,11 @@ namespace Acorisoft.Patterns
             _pattern = owner;
         }
 
+        public void RaiseUpdate()
+        {
+            _pattern.UpdateValue(_propertyName);
+        }
+
         protected virtual bool OnValueChanged(T newValue)
         {
             return true;

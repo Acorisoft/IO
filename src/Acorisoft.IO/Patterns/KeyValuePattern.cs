@@ -87,9 +87,19 @@ namespace Acorisoft.Patterns
             OnSetValue<T>(value, propertyName);
         }
 
-        protected virtual void OnSetValue<T>(T value,string propertyName)
+        internal void UpdateValue(string propertyName)
         {
+            if (string.IsNullOrEmpty(propertyName))
+            {
+                throw new InvalidOperationException("属性名不能为空");
+            }
 
+            using (Start())
+            {
+                Collection.Upsert(MaintainDocument);
+            }
+
+            OnRaiseUpdate(propertyName);
         }
 
         internal T GetValue<T>(string propertyName)
@@ -106,6 +116,17 @@ namespace Acorisoft.Patterns
 
             return BsonMapper.Global.Deserialize<T>(val);
         }
+
+        protected virtual void OnSetValue<T>(T value,string propertyName)
+        {
+            OnRaiseUpdate(propertyName);
+        }
+
+        protected virtual void OnRaiseUpdate(string propertyName)
+        {
+
+        }
+
 
         protected internal string MaintainDocumentName { get; }
 
