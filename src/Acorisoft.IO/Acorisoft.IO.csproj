@@ -5,7 +5,7 @@
 	<PackageIcon>icon_64x64.png</PackageIcon>
 		<PackageId>Acorisoft.IO</PackageId>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageVersion>1.0.0.0</PackageVersion>
+		<PackageVersion>1.0.0.1</PackageVersion>
 		<Description>An custom io library for acorisoft</Description>
 		<PackageProjectUrl>https://github.com/Acorisoft/IO</PackageProjectUrl>
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
