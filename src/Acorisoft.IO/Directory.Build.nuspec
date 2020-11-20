@@ -7,7 +7,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <version>$version$</version>
     <authors>Acoris</authors>
-    <description>An custom ui library for acorisoft</description>
+    <description>An custom io library for acorisoft</description>
     <copyright>MIT</copyright>   
     <license type="expression">MIT</license>
 	  <icon>icon_64x64.png</icon>
@@ -15,7 +15,6 @@
     <frameworkReferences>
       <group targetFramework=".NETCoreApp3.1">
         <frameworkReference name="Microsoft.WindowsDesktop.App" />
-        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
       </group>
     </frameworkReferences>
   </metadata>
